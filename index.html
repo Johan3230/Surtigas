@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Surtigas MOAR</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand"><div class="logo">S</div><div><b>Surtigas MOAR</b><small>Sistema Inteligente de Turnos · "Más allá del turno"</small></div></div>
+    <div class="clock"><strong id="clk" class="num">--</strong><span id="slot">--</span></div>
+    <div class="tools">
+      <button class="btn" id="live" data-act="live" aria-pressed="false"><span class="dot"></span>En vivo</button>
+      <button class="btn pri" data-act="batch" id="batchBtn">⚡ Batch 06:00 AM</button>
+      <button class="btn" data-act="phone" id="phoneBtn" aria-pressed="false">Marco móvil</button>
+      <button class="btn" data-act="theme" aria-label="Cambiar tema">Tema</button>
+    </div>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <main id="view"></main>
+</div>
+<div id="modal" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="engine.js"></script>
+<script src="state.js"></script>
+<script src="chart.js"></script>
+<script src="tab-control.js"></script>
+<script src="tab-colas.js"></script>
+<script src="tab-personal.js"></script>
+<script src="tab-balanceo.js"></script>
+<script src="tab-simulador.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
